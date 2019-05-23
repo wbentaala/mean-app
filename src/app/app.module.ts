@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { PostCreateComponent } from './posts/post-create/post-create.component';
 import { HeaderComponent } from './header/header/header.component';
 import { PostListComponent } from './posts/post-list/post-list/post-list.component';
+import { PostsService } from './services/posts.service';
 
 
 @NgModule({
@@ -29,7 +30,7 @@ import { PostListComponent } from './posts/post-list/post-list/post-list.compone
     MatToolbarModule,
     MatExpansionModule
   ],
-  providers: [],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
